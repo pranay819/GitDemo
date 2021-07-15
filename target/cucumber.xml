@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.625">
+    <testcase classname="Search the vegetable and verify the results" name="Verify searching vegetables and validate result" time="30.253">
+        <failure message="expected [true] but found [false]" type="java.lang.AssertionError">
+            <![CDATA[Given User is on greenkart page.............................................passed
+When User search "Brinjal" vegetable........................................passed
+Then "Brinjal" vegetables gets displayed....................................failed
+
+StackTrace:
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at stepsdefinations.search.something_vegetables_gets_displayed(search.java:29)
+	at ✽."Brinjal" vegetables gets displayed(file:///C:/Users/Pranay%20Nikam/eclipse-workspace-new/Automation/src/test/java/features/search.feature:7)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

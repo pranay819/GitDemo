@@ -1,0 +1,78 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-12T19:25:06.250Z",
+        "line": 4,
+        "name": "Verify searching vegetables and validate result",
+        "description": "",
+        "id": "search-the-vegetable-and-verify-the-results;verify-searching-vegetables-and-validate-result",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 29463280600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on greenkart page",
+            "match": {
+              "location": "stepsdefinations.search.user_is_on_greenkart_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 438574600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User search \"Brinjal\" vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brinjal",
+                  "offset": 13
+                }
+              ],
+              "location": "stepsdefinations.search.user_search_something_vegetable(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: expected [true] but found [false]\r\n\tat org.testng.Assert.fail(Assert.java:99)\r\n\tat org.testng.Assert.failNotEquals(Assert.java:1037)\r\n\tat org.testng.Assert.assertTrue(Assert.java:45)\r\n\tat org.testng.Assert.assertTrue(Assert.java:55)\r\n\tat stepsdefinations.search.something_vegetables_gets_displayed(search.java:29)\r\n\tat ✽.\"Brinjal\" vegetables gets displayed(file:///C:/Users/Pranay%20Nikam/eclipse-workspace-new/Automation/src/test/java/features/search.feature:7)\r\n",
+              "duration": 147893500,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "\"Brinjal\" vegetables gets displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Brinjal",
+                  "offset": 1
+                }
+              ],
+              "location": "stepsdefinations.search.something_vegetables_gets_displayed(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SeleniumTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search the vegetable and verify the results",
+    "description": "",
+    "id": "search-the-vegetable-and-verify-the-results",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/search.feature",
+    "tags": []
+  }
+]
